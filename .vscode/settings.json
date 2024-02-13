@@ -1,0 +1,32 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#ab92b7",
+    "activityBar.background": "#ab92b7",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#73664c",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "editorError.foreground": "#000000ff",
+    "editorInfo.foreground": "#000000ff",
+    "editorWarning.foreground": "#000000ff",
+    "panel.border": "#ab92b7",
+    "sash.hoverBorder": "#ab92b7",
+    "sideBar.border": "#ab92b7",
+    "tab.activeBorder": "#ab92b7"
+  },
+  "peacock.color": "#9473a3",
+  "spellright.language": ["en"],
+  "spellright.documentTypes": [
+    "quarto",
+    "markdown",
+    "latex",
+    "plaintext",
+    "rmd",
+    "yaml"
+  ],
+  "spellright.parserByClass": {
+    "quarto": {
+      "parser": "markdown"
+    }
+  }
+}

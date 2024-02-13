@@ -1,0 +1,34 @@
+---
+title: "Neuropsychological Assessment for Psychiatrists"
+author: Joey W. Trampush, Ph.D.
+format: 
+  revealjs:
+    incremental: true
+    show-notes: separate-page
+    slide-number: true
+    show-slide-number: print
+---
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+
+## Two columns
+
+:::: {.columns}
+
+::: {.column width="40%"}
+contents...
+:::
+
+::: {.column width="60%"}
+contents...
+:::
+
+::::
