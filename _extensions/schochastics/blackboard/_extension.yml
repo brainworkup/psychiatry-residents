@@ -1,0 +1,17 @@
+title: Blackboard Theme
+author: David Schoch
+version: 1.0.0
+contributes:
+  formats:
+    revealjs:
+      slide-number: true
+      menu: false
+      progress: false
+      filters: [imgs.lua]
+      theme: [default, blackboard.scss]
+      css: theme.css
+      # footer: |
+      #   <a href="https://usc.edu">usc</a>
+      #   <img src="img/logo_usc_ksom_black.jpg" alt="USC Logo" size=25%>
+      title-slide-attributes:
+        data-background-image: blackboard.png

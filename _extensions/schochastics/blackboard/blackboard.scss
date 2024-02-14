@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+// $font-family-sans-serif: "Roboto Slab", sans-serif !default;
+// $presentation-heading-font: "Poiret One", sans-serif !default;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,350,350i,400,400i);
+$font-family-sans-serif: "Roboto", sans-serif !default;
+$presentation-heading-font: "Roboto", sans-serif !default;
+
+// colors
+$body-bg: #333333 !default;
+$body-color: white !default;
+$link-color: $body-color !default;
+
+$code-block-border-color: transparent !default;
+
+/*-- scss:rules --*/
+/*--body {
+	background: url('blackboard.png');
+	background-size: cover;
+}--*/
+
+/*Background image*/
+pre > code.sourceCode > span {
+  font-family: "Pangolin";
+}

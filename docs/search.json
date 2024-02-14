@@ -1,45 +1,10 @@
 [
   {
-    "objectID": "index.html#getting-up",
-    "href": "index.html#getting-up",
+    "objectID": "index.html#domains",
+    "href": "index.html#domains",
     "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Getting up",
-    "text": "Getting up\n\nTurn off alarm\nGet out of bed\n\n\nSpeaker notes go here."
-  },
-  {
-    "objectID": "index.html#going-to-sleep",
-    "href": "index.html#going-to-sleep",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Going to sleep",
-    "text": "Going to sleep\n\nGet in bed\nCount sheep"
-  },
-  {
-    "objectID": "index.html#two-columns",
-    "href": "index.html#two-columns",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Two columns",
-    "text": "Two columns\n\n\ncontents…\n\ncontents…"
-  },
-  {
-    "objectID": "index.html#distribution-of-scores-population-level-interpretation",
-    "href": "index.html#distribution-of-scores-population-level-interpretation",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Distribution of Scores: Population-level Interpretation",
-    "text": "Distribution of Scores: Population-level Interpretation\n\nPerformance classification of neuropsychological test scores in the general population."
-  },
-  {
-    "objectID": "index.html#neurocognitive-evaluation-of-dyslexia",
-    "href": "index.html#neurocognitive-evaluation-of-dyslexia",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Neurocognitive Evaluation of Dyslexia",
-    "text": "Neurocognitive Evaluation of Dyslexia\n\n\n\n\nDrilldown from broad to narrow neurocognitive domains."
-  },
-  {
-    "objectID": "index.html#attentionexecutive",
-    "href": "index.html#attentionexecutive",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Attention/Executive",
-    "text": "Attention/Executive"
+    "section": "Domains",
+    "text": "Domains"
   },
   {
     "objectID": "index.html#section",
@@ -68,5 +33,47 @@
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "",
     "text": "Executive Functioning\nProcessing Speed\nWorking Memory\nAttention"
+  },
+  {
+    "objectID": "index.html#general-cognitive-ability-g",
+    "href": "index.html#general-cognitive-ability-g",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "General cognitive ability “g”",
+    "text": "General cognitive ability “g”\n\n\nPerformance across individual tests correlates strongly among each other"
+  },
+  {
+    "objectID": "index.html#distribution-of-scores-population-level-interpretation",
+    "href": "index.html#distribution-of-scores-population-level-interpretation",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Distribution of Scores: Population-level Interpretation",
+    "text": "Distribution of Scores: Population-level Interpretation\n\nPerformance classification of neuropsychological test scores in the general population."
+  },
+  {
+    "objectID": "index.html#neurocognitive-examination",
+    "href": "index.html#neurocognitive-examination",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Neurocognitive Examination",
+    "text": "Neurocognitive Examination"
+  },
+  {
+    "objectID": "index.html#behavioralemotionalpersonality",
+    "href": "index.html#behavioralemotionalpersonality",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Behavioral/Emotional/Personality",
+    "text": "Behavioral/Emotional/Personality\n\nSummary of self-report and observer-report scales from the PAI, CAARS, and CEFI"
+  },
+  {
+    "objectID": "index.html#effortvalidity-testing",
+    "href": "index.html#effortvalidity-testing",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Effort/Validity Testing",
+    "text": "Effort/Validity Testing\n\n\n\n\nDrilldown through validity domains"
+  },
+  {
+    "objectID": "index.html#ld",
+    "href": "index.html#ld",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "LD",
+    "text": "LD\n\n\n\n\nhttps://brainworkup.github.io/psychiatry-residents/"
   }
 ]
