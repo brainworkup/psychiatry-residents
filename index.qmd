@@ -29,7 +29,7 @@ format:
     height: 900
     fig-format: svg
     fig-align: center
-    standalone: false
+    standalone: true
     embed-resources: false
 ---
 
@@ -149,7 +149,7 @@ challenging ...
 
 ---
 
-## Domains {.horizontal}
+## Domains Assessed
 
 ![](domains.png)
 
