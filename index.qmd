@@ -25,8 +25,9 @@ format:
     background-transition: fade
     controls-layout: bottom-right
     footer: <https://brainworkup.github.io/psychiatry-residents/>
-    css: ["css/npsych-fonts.css", "css/npsych-theme.css"]
-    # fig-format: svg
+    css: ["css/npsych-fonts.css"]
+    # css: ["css/npsych-fonts.css", "css/npsych-theme.css"]
+    fig-format: svg
     # logo: logo_ksom.jpg
 # title-slide-attributes:
 #   data-background-image: 'img/logo_usc_ksom_black.jpg'
