@@ -1,14 +1,14 @@
 /.quarto/
 *.pptx
 *.docx
-*.jpg
-*.png
+# *.jpg
+# *.png
 /.history/
 /_site/
 .Rproj.user
 _04-00_feedback.html
 _04-00_feedback.Rmd
-index-speaker.html
+# index-speaker.html
 figs/
 ld_files/
 
