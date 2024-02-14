@@ -7,11 +7,11 @@
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.9">
 
   <meta name="author" content="Joey W. Trampush, Ph.D.">
-  <title>psychiatry-residents – Neuropsychological Assessment for Psychiatrists</title>
+  <title>Neuropsychological Testing for Psychiatrists – Neuropsychological Assessment for Psychiatrists</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -34,6 +34,8 @@
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -320,12 +322,55 @@
       margin-right: 0; 
     }
   </style>
+  <script src="site_libs/htmlwidgets/htmlwidgets.js"></script>
+  <script src="site_libs/jquery/jquery.min.js"></script>
+  <script src="site_libs/proj4js/proj4.js"></script>
+  <link href="site_libs/highcharts/css/motion.css" rel="stylesheet">
+  <script src="site_libs/highcharts/highcharts.js"></script>
+  <script src="site_libs/highcharts/highcharts-3d.js"></script>
+  <script src="site_libs/highcharts/highcharts-more.js"></script>
+  <script src="site_libs/highcharts/modules/stock.js"></script>
+  <script src="site_libs/highcharts/modules/map.js"></script>
+  <script src="site_libs/highcharts/modules/data.js"></script>
+  <script src="site_libs/highcharts/modules/exporting.js"></script>
+  <script src="site_libs/highcharts/modules/offline-exporting.js"></script>
+  <script src="site_libs/highcharts/modules/drilldown.js"></script>
+  <script src="site_libs/highcharts/modules/item-series.js"></script>
+  <script src="site_libs/highcharts/modules/overlapping-datalabels.js"></script>
+  <script src="site_libs/highcharts/modules/annotations.js"></script>
+  <script src="site_libs/highcharts/modules/export-data.js"></script>
+  <script src="site_libs/highcharts/modules/funnel.js"></script>
+  <script src="site_libs/highcharts/modules/heatmap.js"></script>
+  <script src="site_libs/highcharts/modules/treemap.js"></script>
+  <script src="site_libs/highcharts/modules/sankey.js"></script>
+  <script src="site_libs/highcharts/modules/dependency-wheel.js"></script>
+  <script src="site_libs/highcharts/modules/organization.js"></script>
+  <script src="site_libs/highcharts/modules/solid-gauge.js"></script>
+  <script src="site_libs/highcharts/modules/streamgraph.js"></script>
+  <script src="site_libs/highcharts/modules/sunburst.js"></script>
+  <script src="site_libs/highcharts/modules/vector.js"></script>
+  <script src="site_libs/highcharts/modules/wordcloud.js"></script>
+  <script src="site_libs/highcharts/modules/xrange.js"></script>
+  <script src="site_libs/highcharts/modules/tilemap.js"></script>
+  <script src="site_libs/highcharts/modules/venn.js"></script>
+  <script src="site_libs/highcharts/modules/gantt.js"></script>
+  <script src="site_libs/highcharts/modules/timeline.js"></script>
+  <script src="site_libs/highcharts/modules/parallel-coordinates.js"></script>
+  <script src="site_libs/highcharts/modules/bullet.js"></script>
+  <script src="site_libs/highcharts/modules/coloraxis.js"></script>
+  <script src="site_libs/highcharts/modules/dumbbell.js"></script>
+  <script src="site_libs/highcharts/modules/lollipop.js"></script>
+  <script src="site_libs/highcharts/modules/series-label.js"></script>
+  <script src="site_libs/highcharts/plugins/motion.js"></script>
+  <script src="site_libs/highcharts/custom/reset.js"></script>
+  <script src="site_libs/highcharts/modules/boost.js"></script>
+  <script src="site_libs/highchart-binding/highchart.js"></script>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-color="var(–usc-black)" data-background-image="img/logo_usc_ksom_black.jpg" data-background-opacity="0.1" data-background-position="bottom" data-background-size="30% auto" class="quarto-title-block center">
   <h1 class="title">Neuropsychological Assessment for Psychiatrists</h1>
 
 <div class="quarto-title-authors">
@@ -340,15 +385,28 @@ Joey W. Trampush, Ph.D.
 <section id="getting-up" class="slide level2">
 <h2>Getting up</h2>
 <ul>
-<li class="fragment">Turn off alarm</li>
-<li class="fragment">Get out of bed</li>
+<li>Turn off alarm</li>
+<li>Get out of bed</li>
 </ul>
+<aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="going-to-sleep" class="slide level2">
 <h2>Going to sleep</h2>
 <ul>
-<li class="fragment">Get in bed</li>
-<li class="fragment">Count sheep</li>
+<li>Get in bed</li>
+<li>Count sheep</li>
 </ul>
 </section>
 <section id="two-columns" class="slide level2">
@@ -360,13 +418,57 @@ Joey W. Trampush, Ph.D.
 <p>contents…</p>
 </div>
 </div>
+</section>
+<section>
+<section id="patient-examples" class="title-slide slide level1 center">
+<h1>Patient Examples</h1>
+
+</section>
+<section id="distribution-of-scores-population-level-interpretation" class="slide level2">
+<h2>Distribution of Scores: <em>Population-level Interpretation</em></h2>
+
+<img data-src="img/plot_narrow.png" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption">Performance classification of neuropsychological test scores in the general population.</p></section>
+<section id="neurocognitive-evaluation-of-dyslexia" class="slide level2">
+<h2>Neurocognitive Evaluation of Dyslexia</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="highchart html-widget html-fill-item" id="htmlwidget-e6334e4bad3715ed2ad8" style="width:100%;height:576px;"></div>
+<script type="application/json" data-for="htmlwidget-e6334e4bad3715ed2ad8">{"x":{"hc_opts":{"chart":{"reflow":true,"style":{"fontFamily":"Cabin"},"backgroundColor":["gray"]},"title":{"text":"Biggie","style":{"fontSize":"15px"}},"yAxis":{"title":{"text":"z-Score (Mean = 0, SD = 1)"},"labels":{"format":"{value}"}},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"colorByPoint":true,"allowPointSelect":true,"dataLabels":true},"treemap":{"layoutAlgorithm":"squarified"}},"series":[{"group":"group","data":[{"name":"Attention/Executive","y":-0.21,"y2":43,"range":"Average","drilldown":"attention/executive"},{"name":"Memory","y":-0.28,"y2":40,"range":"Average","drilldown":"memory"},{"name":"Visual Perception/Construction","y":-0.45,"y2":35,"range":"Average","drilldown":"visual perception/construction"},{"name":"General Cognitive Ability","y":-0.44,"y2":33,"range":"Average","drilldown":"general cognitive ability"},{"name":"Verbal/Language","y":-0.68,"y2":29,"range":"Average","drilldown":"verbal/language"},{"name":"Academic Skills","y":-1.95,"y2":4,"range":"Below Average","drilldown":"academic skills"}],"type":"bar","name":"Neuropsychological Test Scores"}],"xAxis":{"type":"category","title":{"text":"Domain"},"categories":null},"tooltip":{"pointFormat":"<table>\n  <tr>\n    <th>Name<\/th>\n    <td>{point.name}<\/td>\n  <\/tr>\n  <tr>\n    <th>Score<\/th>\n    <td>{point.y}<\/td>\n  <\/tr>\n  <tr>\n    <th>Percentile<\/th>\n    <td>{point.y2}<\/td>\n  <\/tr>\n  <tr>\n    <th>Range<\/th>\n    <td>{point.range}<\/td>\n  <\/tr>\n<\/table>","useHTML":true,"valueDecimals":1},"drilldown":{"allowPointDrilldown":true,"series":[{"id":"memory","type":"column","data":[{"name":"Learning Efficiency","y":-0.07000000000000001,"y2":46,"range":"Average","drilldown":"memory_learning efficiency"},{"name":"Delayed Recall","y":-0.47,"y2":34,"range":"Average","drilldown":"memory_delayed recall"}]},{"id":"verbal/language","type":"column","data":[{"name":"Comprehension","y":0.1,"y2":54,"range":"Average","drilldown":"verbal/language_comprehension"},{"name":"Retrieval","y":-0.1,"y2":46,"range":"Average","drilldown":"verbal/language_retrieval"},{"name":"Reasoning","y":-0.67,"y2":25,"range":"Average","drilldown":"verbal/language_reasoning"},{"name":"Fluency","y":-1.36,"y2":9,"range":"Low Average","drilldown":"verbal/language_fluency"}]},{"id":"attention/executive","type":"column","data":[{"name":"Working Memory","y":0.2,"y2":58,"range":"Average","drilldown":"attention/executive_working memory"},{"name":"Processing Speed","y":-0.14,"y2":44,"range":"Average","drilldown":"attention/executive_processing speed"},{"name":"Executive Functioning","y":-0.35,"y2":38,"range":"Average","drilldown":"attention/executive_executive functioning"},{"name":"Attention","y":-0.43,"y2":36,"range":"Average","drilldown":"attention/executive_attention"}]},{"id":"general cognitive ability","type":"column","data":[{"name":"Neuropsychological Functioning","y":-0.39,"y2":35,"range":"Average","drilldown":"general cognitive ability_neuropsychological functioning"},{"name":"Crystallized Knowledge","y":-0.47,"y2":32,"range":"Average","drilldown":"general cognitive ability_crystallized knowledge"},{"name":"Fluid Reasoning","y":-0.52,"y2":30,"range":"Average","drilldown":"general cognitive ability_fluid reasoning"},{"name":"General Ability","y":-0.61,"y2":27,"range":"Average","drilldown":"general cognitive ability_general ability"}]},{"id":"visual perception/construction","type":"column","data":[{"name":"Perception","y":0.31,"y2":62,"range":"Average","drilldown":"visual perception/construction_perception"},{"name":"Reasoning","y":-0.33,"y2":37,"range":"Average","drilldown":"visual perception/construction_reasoning"},{"name":"Construction","y":-0.5,"y2":31,"range":"Average","drilldown":"visual perception/construction_construction"},{"name":"Organization","y":-1.28,"y2":10,"range":"Low Average","drilldown":"visual perception/construction_organization"}]},{"id":"academic skills","type":"column","data":[{"name":"Reading","y":-1.95,"y2":4,"range":"Below Average","drilldown":"academic skills_reading"}]},{"id":"memory_learning efficiency","type":"column","data":[{"name":"Visual Memory","y":1.28,"y2":90,"range":"High Average","drilldown":"memory_learning efficiency_visual memory"},{"name":"Word-List Learning","y":-0.17,"y2":43,"range":"Average","drilldown":"memory_learning efficiency_word-list learning"},{"name":"Story Memory","y":-0.92,"y2":18,"range":"Low Average","drilldown":"memory_learning efficiency_story memory"}]},{"id":"memory_delayed recall","type":"column","data":[{"name":"Story Memory","y":-0.35,"y2":37,"range":"Average","drilldown":"memory_delayed recall_story memory"},{"name":"Free-Recall Memory","y":-0.45,"y2":33,"range":"Average","drilldown":"memory_delayed recall_free-recall memory"},{"name":"Visual Memory","y":-0.5600000000000001,"y2":33,"range":"Average","drilldown":"memory_delayed recall_visual memory"}]},{"id":"verbal/language_fluency","type":"column","data":[{"name":"Semantic Fluency","y":-1.17,"y2":12,"range":"Low Average","drilldown":"verbal/language_fluency_semantic fluency"},{"name":"Phonemic Fluency","y":-1.55,"y2":6,"range":"Below Average","drilldown":"verbal/language_fluency_phonemic fluency"}]},{"id":"verbal/language_comprehension","type":"column","data":[{"name":"Listening Ability","y":0.1,"y2":54,"range":"Average","drilldown":"verbal/language_comprehension_listening ability"}]},{"id":"verbal/language_retrieval","type":"column","data":[{"name":"Word Retrieval","y":-0.1,"y2":46,"range":"Average","drilldown":"verbal/language_retrieval_word retrieval"}]},{"id":"verbal/language_reasoning","type":"column","data":[{"name":"Verbal Reasoning","y":-0.67,"y2":25,"range":"Average","drilldown":"verbal/language_reasoning_verbal reasoning"}]},{"id":"attention/executive_executive functioning","type":"column","data":[{"name":"Generativity","y":0.1,"y2":54,"range":"Average","drilldown":"attention/executive_executive functioning_generativity"},{"name":"Judgment","y":-0.2,"y2":42,"range":"Average","drilldown":"attention/executive_executive functioning_judgment"},{"name":"Planning","y":-0.65,"y2":27,"range":"Average","drilldown":"attention/executive_executive functioning_planning"}]},{"id":"attention/executive_attention","type":"column","data":[{"name":"Attentional Fluency","y":0.15,"y2":56,"range":"Average","drilldown":"attention/executive_attention_attentional fluency"},{"name":"Attention Span","y":-1.02,"y2":16,"range":"Low Average","drilldown":"attention/executive_attention_attention span"}]},{"id":"attention/executive_working memory","type":"column","data":[{"name":"Working Memory Capacity","y":0.2,"y2":58,"range":"Average","drilldown":"attention/executive_working memory_working memory capacity"}]},{"id":"attention/executive_processing speed","type":"column","data":[{"name":"Psychomotor Speed","y":0.1,"y2":54,"range":"Average","drilldown":"attention/executive_processing speed_psychomotor speed"},{"name":"Cognitive Efficiency","y":-0.37,"y2":36,"range":"Average","drilldown":"attention/executive_processing speed_cognitive efficiency"}]},{"id":"general cognitive ability_general ability","type":"column","data":[{"name":"General Intelligence","y":-0.61,"y2":27,"range":"Average","drilldown":"general cognitive ability_general ability_general intelligence"}]},{"id":"general cognitive ability_crystallized knowledge","type":"column","data":[{"name":"Crystallized Knowledge","y":-0.47,"y2":32,"range":"Average","drilldown":"general cognitive ability_crystallized knowledge_crystallized knowledge"}]},{"id":"general cognitive ability_fluid reasoning","type":"column","data":[{"name":"Fluid Reasoning","y":-0.52,"y2":30,"range":"Average","drilldown":"general cognitive ability_fluid reasoning_fluid reasoning"}]},{"id":"general cognitive ability_neuropsychological functioning","type":"column","data":[{"name":"NAB Memory Index","y":0,"y2":50,"range":"Average","drilldown":"general cognitive ability_neuropsychological functioning_nab memory index"},{"name":"NAB Spatial Index","y":-0.28,"y2":39,"range":"Average","drilldown":"general cognitive ability_neuropsychological functioning_nab spatial index"},{"name":"NAB Attention Index","y":-0.33,"y2":37,"range":"Average","drilldown":"general cognitive ability_neuropsychological functioning_nab attention index"},{"name":"NAB Language Index","y":-0.52,"y2":30,"range":"Average","drilldown":"general cognitive ability_neuropsychological functioning_nab language index"},{"name":"NAB Executive Functions Index","y":-0.61,"y2":27,"range":"Average","drilldown":"general cognitive ability_neuropsychological functioning_nab executive functions index"},{"name":"NAB Total Index","y":-0.61,"y2":27,"range":"Average","drilldown":"general cognitive ability_neuropsychological functioning_nab total index"}]},{"id":"visual perception/construction_perception","type":"column","data":[{"name":"Visual Perception","y":0.31,"y2":62,"range":"Average","drilldown":"visual perception/construction_perception_visual perception"}]},{"id":"visual perception/construction_construction","type":"column","data":[{"name":"Figure Construction","y":-0.5,"y2":31,"range":"Average","drilldown":"visual perception/construction_construction_figure construction"}]},{"id":"visual perception/construction_organization","type":"column","data":[{"name":"Attentional Fluency","y":-1.28,"y2":10,"range":"Low Average","drilldown":"visual perception/construction_organization_attentional fluency"}]},{"id":"visual perception/construction_reasoning","type":"column","data":[{"name":"Nonverbal Reasoning","y":-0.33,"y2":37,"range":"Average","drilldown":"visual perception/construction_reasoning_nonverbal reasoning"}]},{"id":"academic skills_reading","type":"column","data":[{"name":"Comprehension","y":-1.17,"y2":12,"range":"Low Average","drilldown":"academic skills_reading_comprehension"},{"name":"Decoding","y":-2.19,"y2":2,"range":"Below Average","drilldown":"academic skills_reading_decoding"},{"name":"Fluency","y":-2.1,"y2":2,"range":"Below Average","drilldown":"academic skills_reading_fluency"}]},{"id":"memory_learning efficiency_word-list learning","type":"column","data":[{"name":"Trial 1 Correct","y":0,"y2":50,"range":"Average"},{"name":"Trial 3 Correct","y":0,"y2":50,"range":"Average"},{"name":"Trials 1-4 Correct","y":-0.2,"y2":42,"range":"Average"},{"name":"Trial 2 Correct","y":-0.33,"y2":37,"range":"Average"},{"name":"Trial 4 Correct","y":-0.33,"y2":37,"range":"Average"}]},{"id":"memory_learning efficiency_visual memory","type":"column","data":[{"name":"Shape Learning Immediate Recognition","y":1.28,"y2":90,"range":"High Average"}]},{"id":"memory_learning efficiency_story memory","type":"column","data":[{"name":"Story Learning Immediate Recall","y":-0.92,"y2":18,"range":"Low Average"}]},{"id":"memory_delayed recall_free-recall memory","type":"column","data":[{"name":"Long Delay Cued Recall","y":0,"y2":50,"range":"Average"},{"name":"Long Delay Free Recall","y":-0.67,"y2":25,"range":"Average"},{"name":"Short Delay Free Recall","y":-0.67,"y2":25,"range":"Average"}]},{"id":"memory_delayed recall_visual memory","type":"column","data":[{"name":"Shape Learning Delayed Recognition","y":0.41,"y2":66,"range":"Average"},{"name":"Shape Learning Percent Retention","y":-0.67,"y2":25,"range":"Average"},{"name":"ROCFT Delayed Recall","y":-1.41,"y2":8,"range":"Below Average"}]},{"id":"memory_delayed recall_story memory","type":"column","data":[{"name":"Story Learning Percent Retention","y":0,"y2":50,"range":"Average"},{"name":"Story Learning Delayed Recall","y":-0.71,"y2":24,"range":"Low Average"}]},{"id":"verbal/language_fluency_phonemic fluency","type":"column","data":[{"name":"Letter Fluency","y":-1.55,"y2":6,"range":"Below Average"}]},{"id":"verbal/language_fluency_semantic fluency","type":"column","data":[{"name":"Category Fluency","y":-1.17,"y2":12,"range":"Low Average"}]},{"id":"verbal/language_comprehension_listening ability","type":"column","data":[{"name":"Auditory Comprehension","y":0.1,"y2":54,"range":"Average"}]},{"id":"verbal/language_retrieval_word retrieval","type":"column","data":[{"name":"Naming","y":-0.1,"y2":46,"range":"Average"}]},{"id":"verbal/language_reasoning_verbal reasoning","type":"column","data":[{"name":"Similarities","y":-0.67,"y2":25,"range":"Average"}]},{"id":"attention/executive_executive functioning_planning","type":"column","data":[{"name":"Unstructured Task","y":-0.31,"y2":38,"range":"Average"},{"name":"Mazes","y":-0.99,"y2":16,"range":"Low Average"}]},{"id":"attention/executive_executive functioning_judgment","type":"column","data":[{"name":"Judgment","y":-0.2,"y2":42,"range":"Average"}]},{"id":"attention/executive_executive functioning_generativity","type":"column","data":[{"name":"Word Generation","y":0.1,"y2":54,"range":"Average"}]},{"id":"attention/executive_attention_attention span","type":"column","data":[{"name":"Digits Forward","y":-0.92,"y2":18,"range":"Low Average"},{"name":"Digits Forward Longest Span","y":-1.13,"y2":13,"range":"Low Average"}]},{"id":"attention/executive_attention_attentional fluency","type":"column","data":[{"name":"Numbers & Letters Part B Efficiency","y":0.31,"y2":62,"range":"Average"},{"name":"TMT, Part B","y":0,"y2":50,"range":"Average"}]},{"id":"attention/executive_working memory_working memory capacity","type":"column","data":[{"name":"Digits Backward","y":0.61,"y2":73,"range":"Average"},{"name":"Digits Backward Longest Span","y":0,"y2":50,"range":"Average"},{"name":"Letter-Number Sequencing","y":0,"y2":50,"range":"Average"}]},{"id":"attention/executive_processing speed_psychomotor speed","type":"column","data":[{"name":"TMT, Part A","y":0.5,"y2":69,"range":"Average"},{"name":"Numbers & Letters Part A Speed","y":-0.31,"y2":38,"range":"Average"}]},{"id":"attention/executive_processing speed_cognitive efficiency","type":"column","data":[{"name":"Coding","y":-0.33,"y2":37,"range":"Average"},{"name":"Numbers & Letters Part A Efficiency","y":-0.41,"y2":34,"range":"Average"}]},{"id":"general cognitive ability_general ability_general intelligence","type":"column","data":[{"name":"General Ability","y":-0.61,"y2":27,"range":"Average"}]},{"id":"general cognitive ability_crystallized knowledge_crystallized knowledge","type":"column","data":[{"name":"Crystallized Knowledge","y":-0.47,"y2":32,"range":"Average"}]},{"id":"general cognitive ability_fluid reasoning_fluid reasoning","type":"column","data":[{"name":"Fluid Reasoning","y":-0.52,"y2":30,"range":"Average"}]},{"id":"general cognitive ability_neuropsychological functioning_nab total index","type":"column","data":[{"name":"NAB Total Index","y":-0.61,"y2":27,"range":"Average"}]},{"id":"general cognitive ability_neuropsychological functioning_nab attention index","type":"column","data":[{"name":"NAB Attention Index","y":-0.33,"y2":37,"range":"Average"}]},{"id":"general cognitive ability_neuropsychological functioning_nab language index","type":"column","data":[{"name":"NAB Language Index","y":-0.52,"y2":30,"range":"Average"}]},{"id":"general cognitive ability_neuropsychological functioning_nab memory index","type":"column","data":[{"name":"NAB Memory Index","y":0,"y2":50,"range":"Average"}]},{"id":"general cognitive ability_neuropsychological functioning_nab spatial index","type":"column","data":[{"name":"NAB Spatial Index","y":-0.28,"y2":39,"range":"Average"}]},{"id":"general cognitive ability_neuropsychological functioning_nab executive functions index","type":"column","data":[{"name":"NAB Executive Functions Index","y":-0.61,"y2":27,"range":"Average"}]},{"id":"visual perception/construction_perception_visual perception","type":"column","data":[{"name":"Visual Discrimination","y":0.31,"y2":62,"range":"Average"}]},{"id":"visual perception/construction_construction_figure construction","type":"column","data":[{"name":"Design Construction","y":-0.5,"y2":31,"range":"Average"}]},{"id":"visual perception/construction_organization_attentional fluency","type":"column","data":[{"name":"ROCFT Copy","y":-1.28,"y2":10,"range":"Low Average"}]},{"id":"visual perception/construction_reasoning_nonverbal reasoning","type":"column","data":[{"name":"Matrix Reasoning","y":-0.33,"y2":37,"range":"Average"}]},{"id":"academic skills_reading_decoding","type":"column","data":[{"name":"Word Reading","y":-2.05,"y2":2,"range":"Below Average"},{"name":"Pseudoword Decoding","y":-2.33,"y2":1,"range":"Exceptionally Low"}]},{"id":"academic skills_reading_comprehension","type":"column","data":[{"name":"Reading Comprehension","y":-1.17,"y2":12,"range":"Low Average"}]},{"id":"academic skills_reading_fluency","type":"column","data":[{"name":"Orthographic Fluency","y":-1.88,"y2":3,"range":"Below Average"},{"name":"Decoding Fluency","y":-2.33,"y2":1,"range":"Exceptionally Low"}]}]},"colorAxis":{"minColor":"red","maxColor":"blue"}},"theme":{"colors":["#2b908f","#90ee7e","#f45b5b","#7798BF","#aaeeee","#ff0066","#eeaaee","#55BF3B"],"chart":{"backgroundColor":{"linearGradient":{"x1":0,"y1":0,"x2":1,"y2":1},"stops":[[0,"#2a2a2b"],[1,"#3e3e40"]]},"style":{"fontFamily":"Unica One, sans-serif","color":"#A2A39C"},"plotBorderColor":"#606063"},"title":{"style":{"color":"#E0E0E3","textTransform":"uppercase","fontSize":"20px"},"align":"left"},"subtitle":{"style":{"color":"#E0E0E3","textTransform":"uppercase"},"align":"left"},"legend":{"align":"right","verticalAlign":"bottom","itemStyle":{"fontWeight":"normal","color":"#E0E0E3"},"itemHoverStyle":{"color":"#FFF"},"itemHiddenStyle":{"color":"#606063"}},"xAxis":{"gridLineDashStyle":"Dot","gridLineWidth":1,"gridLineColor":"#707073","lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","tickWidth":1,"labels":{"style":{"color":"#E0E0E3"}},"title":{"style":{"color":"#A0A0A3"}}},"yAxis":{"gridLineDashStyle":"Dot","gridLineColor":"#707073","lineColor":"#707073","minorGridLineColor":"#505053","tickColor":"#707073","tickWidth":1,"labels":{"style":{"color":"#E0E0E3"}},"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"rgba(0, 0, 0, 0.85)","style":{"color":"#F0F0F0"}},"plotOptions":{"series":{"dataLabels":{"color":"#B0B0B3"},"marker":{"lineColor":"#333"}},"boxplot":{"fillColor":"#505053"},"candlestick":{"lineColor":"white"},"errorbar":{"color":"white"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#707073"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"rangeSelector":{"buttonTheme":{"fill":"#505053","stroke":"#000000","style":{"color":"#CCC"},"states":{"hover":{"fill":"#707073","stroke":"#000000","style":{"color":"white"}},"select":{"fill":"#000003","stroke":"#000000","style":{"color":"white"}}}},"inputBoxBorderColor":"#505053","inputStyle":{"backgroundColor":"#333","color":"silver"},"labelStyle":{"color":"silver"}},"navigator":{"handles":{"backgroundColor":"#666","borderColor":"#AAA"},"outlineColor":"#CCC","maskFill":"rgba(255,255,255,0.1)","series":{"color":"#7798BF","lineColor":"#A6C7ED"},"xAxis":{"gridLineColor":"#505053"}},"scrollbar":{"barBackgroundColor":"#808083","barBorderColor":"#808083","buttonArrowColor":"#CCC","buttonBackgroundColor":"#606063","buttonBorderColor":"#606063","rifleColor":"#FFF","trackBackgroundColor":"#404043","trackBorderColor":"#404043"},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Unica+One","Cabin"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p>Drilldown from broad to narrow neurocognitive domains.</p>
+</div>
+</div>
+</section>
+<section id="attentionexecutive" class="slide level2">
+<h2>Attention/Executive</h2>
+</section>
+<section id="section" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>Attention</p>
+</section>
+<section id="section-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>Working Memory</p>
+<p>Attention</p>
+</section>
+<section id="section-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>Processing Speed</p>
+<p>Working Memory</p>
+<p>Attention</p>
+</section>
+<section id="section-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>Executive Functioning</p>
+<p>Processing Speed</p>
+<p>Working Memory</p>
+<p>Attention</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -377,6 +479,9 @@ Joey W. Trampush, Ph.D.
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="site_libs/revealjs/plugin/multiplex/multiplex.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -397,7 +502,9 @@ Joey W. Trampush, Ph.D.
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"width":"wide"},
+'chalkboard': {"buttons":true},
+'multiplex': {"secret":null,"id":"a5fd43c9f88507c9","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -408,7 +515,7 @@ Joey W. Trampush, Ph.D.
         controlsTutorial: false,
 
         // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
+        controlsLayout: 'bottom-right',
 
         // Visibility rule for backwards navigation arrows; "faded", "hidden"
         // or "visible"
@@ -483,7 +590,7 @@ Joey W. Trampush, Ph.D.
         pause: true,
 
         // Flags if speaker notes should be visible to all viewers
-        showNotes: "separate-page",
+        showNotes: false,
 
         // Global override for autoplaying embedded media (null/true/false)
         autoPlayMedia: null,
@@ -523,14 +630,14 @@ Joey W. Trampush, Ph.D.
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
+        backgroundTransition: 'fade',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
@@ -568,15 +675,53 @@ Joey W. Trampush, Ph.D.
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
-          RevealNotes,
+          
           RevealSearch,
           RevealZoom
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

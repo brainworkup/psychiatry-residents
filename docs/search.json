@@ -4,7 +4,7 @@
     "href": "index.html#getting-up",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Getting up",
-    "text": "Getting up\n\nTurn off alarm\nGet out of bed"
+    "text": "Getting up\n\nTurn off alarm\nGet out of bed\n\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#going-to-sleep",
@@ -19,5 +19,54 @@
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Two columns",
     "text": "Two columns\n\n\ncontents…\n\ncontents…"
+  },
+  {
+    "objectID": "index.html#distribution-of-scores-population-level-interpretation",
+    "href": "index.html#distribution-of-scores-population-level-interpretation",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Distribution of Scores: Population-level Interpretation",
+    "text": "Distribution of Scores: Population-level Interpretation\n\nPerformance classification of neuropsychological test scores in the general population."
+  },
+  {
+    "objectID": "index.html#neurocognitive-evaluation-of-dyslexia",
+    "href": "index.html#neurocognitive-evaluation-of-dyslexia",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Neurocognitive Evaluation of Dyslexia",
+    "text": "Neurocognitive Evaluation of Dyslexia\n\n\n\n\nDrilldown from broad to narrow neurocognitive domains."
+  },
+  {
+    "objectID": "index.html#attentionexecutive",
+    "href": "index.html#attentionexecutive",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Attention/Executive",
+    "text": "Attention/Executive"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "",
+    "text": "Attention"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "",
+    "text": "Working Memory\nAttention"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "",
+    "text": "Processing Speed\nWorking Memory\nAttention"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "",
+    "text": "Executive Functioning\nProcessing Speed\nWorking Memory\nAttention"
   }
 ]

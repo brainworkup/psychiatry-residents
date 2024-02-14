@@ -3,16 +3,80 @@ title: "Neuropsychological Assessment for Psychiatrists"
 author: Joey W. Trampush, Ph.D.
 format: 
   revealjs:
-    incremental: true
-    show-notes: separate-page
+    incremental: false
+    show-notes: false #separate-page
     slide-number: true
     show-slide-number: print
+    menu:
+      side: left
+      width: wide
+    embed-resources: false
+    progress: true
+    history: true
+    chalkboard: true
+    multiplex: true
+    theme: dark
+    transition: slide
+    background-transition: fade
+    controls-layout: bottom-right
+title-slide-attributes:
+  data-background-image: img/logo_usc_ksom_black.jpg
+  data-background-size: 30% auto
+  data-background-opacity: "0.1"
+  data-background-position: bottom
+  data-background-color: var(--usc-black)
 ---
+
+```{r setup, include=FALSE}
+## load libraries
+library(crosstalk)
+library(dplyr)
+library(gifski)
+library(highcharter)
+library(htmlwidgets)
+library(knitr)
+library(languageserver)
+library(manipulateWidget)
+library(revealjs)
+library(svglite)
+library(tibble)
+library(vroom)
+library(readr)
+library(widgetframe)
+library(xaringan)
+library(xaringanExtra)
+library(xaringanthemer)
+library(tidyverse)
+library(bwu)
+## knitr options
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.path = "figs/",
+  fig.width = 12,
+  fig.height = 4,
+  fig.asp = .5,
+  fig.retina = 3,
+  out.width = "100%",
+  fig.showtext = TRUE,
+  comment = NULL,
+  cache = FALSE,
+  cache.path = "cache/",
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  dev = c("svg", "svglite"),
+  hiline = TRUE
+)
+```
 
 ## Getting up
 
 - Turn off alarm
 - Get out of bed
+
+::: {.notes}
+Speaker notes go here.
+:::
 
 ## Going to sleep
 
@@ -32,3 +96,84 @@ contents...
 :::
 
 ::::
+
+# Patient Examples
+
+```{r, read-data}
+library(readr)
+neuropsych <- read_csv("data/neuropsych.csv")
+neurocog <-
+  readr::read_csv("data/neurocog.csv", show_col_types = TRUE) |>
+  dplyr::filter(scale != "Orientation") |>
+  dplyr::filter(narrow != "Response Monitoring") |>
+  dplyr::filter(narrow != "Recognition Memory")
+neurobehav <-
+  readr::read_csv("data/neurobehav.csv", show_col_types = TRUE)
+validity <-
+  readr::read_csv("data/validity.csv", show_col_types = TRUE)
+```
+
+## Distribution of Scores: _Population-level Interpretation_
+
+```{r, gauss-plot1, fig.cap = 'Performance classification of neuropsychological test scores in the general population.', fig.retina = 3, fig.asp = 0.5, out.width = '50%'}
+knitr::include_graphics("img/plot_narrow.png", auto_pdf = TRUE)
+```
+
+## Neurocognitive Evaluation of Dyslexia
+
+```{r merge-themes, echo=FALSE}
+# if using single theme
+theme <- highcharter::hc_theme_sandsignika()
+# if merging themes
+theme_merge <-
+  highcharter::hc_theme_merge(
+    highcharter::hc_theme_monokai(),
+    highcharter::hc_theme_darkunica()
+  )
+```
+
+```{r drilldown-plot1, fig.cap = "Drilldown from broad to narrow neurocognitive domains.", fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+
+patient <- "Biggie"
+data <- neurocog
+neuro_domain <- "Neuropsychological Test Scores"
+theme <- theme_merge
+plot1 <-
+  bwu::drilldown(
+    data = data,
+    patient = patient,
+    neuro_domain = neuro_domain,
+    theme = theme
+  )
+plot1
+```
+
+## Attention/Executive
+
+## {auto-animate=true}
+
+Attention
+
+## {auto-animate=true}
+
+Working Memory
+
+Attention
+
+## {auto-animate=true}
+
+Processing Speed
+
+Working Memory
+
+Attention
+
+## {auto-animate=true}
+
+Executive Functioning
+
+Processing Speed
+
+Working Memory
+
+Attention
