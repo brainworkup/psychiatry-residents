@@ -16,7 +16,7 @@ format:
     menu:
       side: left
       width: normal
-    embed-resources: true #false
+    embed-resources: false
     progress: true
     history: true
     chalkboard: false
