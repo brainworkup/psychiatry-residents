@@ -16,7 +16,6 @@ format:
     menu:
       side: left
       width: normal
-    embed-resources: false
     progress: true
     history: true
     chalkboard: false
@@ -30,6 +29,8 @@ format:
     height: 900
     fig-format: svg
     fig-align: center
+    standalone: false
+    embed-resources: false
 ---
 
 ```{r setup, include=FALSE}
@@ -120,9 +121,9 @@ psychiatric diagnosis and treatment planning
 - Role of neuropsychological assessment in psychiatric differential diagnosis is
 challenging ...
 
-# standard neuropsychological test battery
+# Standard neuropsychological test battery
 
-## Behavioral/Emotional/Personality
+### Behavioral/Emotional/Personality
 
 - Conners' Adult ADHD Diagnostic Interview for DSM-IV (CAADID), Part I: History
 - Conners' Adult ADHD Rating Scales--Self-Report: Long Version (CAARS--S:L)
@@ -146,6 +147,7 @@ challenging ...
 - ACS Word Choice Test
 - Dot Counting Test (DCT)
 
+---
 
 ## Domains
 
@@ -155,7 +157,7 @@ challenging ...
 
 ![](stroop.svg)
 
-## Processing speed and \$\$
+## Processing speed and \$\$\$
 
 ![](coding_x_income.png)
 
@@ -256,7 +258,7 @@ validity <-
   readr::read_csv("data/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination
+## Neurocognitive Examination {background-color="black"}
 
 ```{r merge-themes, echo=FALSE}
 # if using single theme
@@ -286,7 +288,7 @@ plot1
 ```
 
 
-## Behavioral/Emotional/Personality
+## Behavioral/Emotional/Personality {background-color="black"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -307,7 +309,7 @@ plot2 <-
 plot2
 ```
 
-## Effort/Validity Testing
+## Effort/Validity Testing {background-color="black"}
 
 ```{r drilldown-plot3, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
@@ -344,7 +346,7 @@ validity <-
   readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)" text-color="var(--light-purple)"}
+## Neurocognitive Examination
 
 ```{r merge-themes2, echo=FALSE}
 # if using single theme
@@ -374,7 +376,7 @@ plot1b
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--near-black)" text-color="var(--light-purple)" background-repeat="repeat"}
+## Behavioral/Emotional/Personality
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -395,7 +397,7 @@ plot2b <-
 plot2b
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)" text-color="var(--light-purple)" background-repeat="repeat"}
+## Effort/Validity Testing
 
 ```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
