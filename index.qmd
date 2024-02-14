@@ -16,18 +16,19 @@ format:
     menu:
       side: left
       width: normal
-    embed-resources: false
+    embed-resources: true
     progress: true
     history: true
-    chalkboard: true
+    chalkboard: false
     multiplex: true
     transition: slide
     background-transition: fade
     controls-layout: bottom-right
     footer: <https://brainworkup.github.io/psychiatry-residents/>
+    fig-format: svg
     # logo: logo_ksom.jpg
 # title-slide-attributes:
-#   data-background-image: img/logo_usc_ksom_black.jpg
+#   data-background-image: "img/logo_usc_ksom_black.jpg"
 #   data-background-size: 25% auto
 #   data-background-opacity: "0.1"
 #   data-background-position: bottom
@@ -189,7 +190,7 @@ validity <-
 knitr::include_graphics("img/plot_narrow.png", auto_pdf = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Neurocognitive Examination {background-color="var(--near-black)" background-image="url("img/logo_usc_ksom_black.jpg")" background-size="15%" background-repeat="repeat"}
 
 ```{r merge-themes, echo=FALSE}
 # if using single theme
@@ -219,7 +220,7 @@ plot1
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url("img/logo_usc_ksom_black.jpg")" background-size="15%" background-repeat="repeat"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -240,7 +241,7 @@ plot2 <-
 plot2
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Effort/Validity Testing {background-color="var(--near-black)" background-image="url("img/logo_usc_ksom_black.jpg")" background-size="15%" background-repeat="repeat"}
 
 ```{r drilldown-plot3, fig.cap = 'Drilldown through validity domains', fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
@@ -259,9 +260,9 @@ plot3
 
 # Case Report #2
 
-Patient: 24 yr-old female
+- Patient: 24 yr-old female
  
-Referral: ADHD and anxiety
+- Referral: ADHD and anxiety
 
 ```{r, read-data2}
 library(readr)
@@ -277,7 +278,7 @@ validity <-
   readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Neurocognitive Examination {background-color="var(--near-black)" background-image="url("img/logo_usc_ksom_black.jpg")" background-size="15%" background-repeat="repeat"}
 
 ```{r merge-themes2, echo=FALSE}
 # if using single theme
@@ -307,7 +308,7 @@ plot1b
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url("img/logo_usc_ksom_black.jpg")" background-size="15%" background-repeat="repeat"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -328,7 +329,7 @@ plot2b <-
 plot2b
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Effort/Validity Testing {background-color="var(--near-black)" background-image="url("img/logo_usc_ksom_black.jpg")" background-size="15%" background-repeat="repeat"}
 
 ```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
