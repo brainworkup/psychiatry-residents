@@ -15,7 +15,7 @@ format:
     show-slide-number: print
     menu:
       side: left
-      width: wide
+      width: normal
     embed-resources: false
     progress: true
     history: true
@@ -104,36 +104,6 @@ knitr::opts_chunk$set(dev.args = list(bg = "transparent"))
 
 ![](domains.png)
 
-# Attention/Executive
-
-## {auto-animate=true}
-
-Attention
-
-## {auto-animate=true}
-
-Working Memory
-
-Attention
-
-## {auto-animate=true}
-
-Processing Speed
-
-Working Memory
-
-Attention
-
-## {auto-animate=true}
-
-Executive Functioning
-
-Processing Speed
-
-Working Memory
-
-Attention
-
 ## General cognitive ability "*g*"
 
 :::: {.columns}
@@ -148,8 +118,57 @@ Performance across individual tests correlates strongly among each other
 
 ::::
 
-# Patient Examples
+## Learning Disorders (LD)
 
+![](ld.png)
+
+## Attention/Executive {auto-animate=true}
+
+Attention
+
+  - attention span
+  - attentional fluency
+
+## Attention/Executive {auto-animate=true}
+<!-- ## {auto-animate=true} -->
+
+Working Memory
+
+  - verbal working memory
+  - nonverbal working memory
+
+Attention
+
+## Attention/Executive {auto-animate=true}
+<!-- ## {auto-animate=true} -->
+
+Processing Speed
+
+- psychomotor speed
+- cognitive efficiency
+
+Working Memory
+
+Attention
+
+## Attention/Executive {auto-animate=true}
+<!-- ## {auto-animate=true} -->
+
+Executive Functioning
+
+- planning
+- judgment
+
+Processing Speed
+
+Working Memory
+
+Attention
+
+# Case Report #1
+
+Patient: 23 yr-old male 
+Referral: ADHD and dyslexia evaluation
 ```{r, read-data}
 library(readr)
 neuropsych <- read_csv("data/neuropsych.csv")
@@ -238,7 +257,90 @@ plot3 <-
 plot3
 ```
 
+# Case Report #2
 
-## LD
+Patient: 24 yr-old female
+ 
+Referral: ADHD and anxiety
 
-![](ld.png)
+```{r, read-data2}
+library(readr)
+neuropsych <- read_csv("data/adhd/neuropsych.csv")
+neurocog <-
+  readr::read_csv("data/adhd/neurocog.csv", show_col_types = TRUE) |>
+  dplyr::filter(scale != "Orientation") |>
+  dplyr::filter(narrow != "Response Monitoring") |>
+  dplyr::filter(narrow != "Recognition Memory")
+neurobehav <-
+  readr::read_csv("data/adhd/neurobehav.csv", show_col_types = TRUE)
+validity <-
+  readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
+```
+
+## Neurocognitive Examination {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+
+```{r merge-themes2, echo=FALSE}
+# if using single theme
+theme <- highcharter::hc_theme_sandsignika()
+# if merging themes
+theme_merge <-
+  highcharter::hc_theme_merge(
+    highcharter::hc_theme_monokai(),
+    highcharter::hc_theme_darkunica()
+  )
+```
+
+```{r drilldown-plot1b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+
+patient <- "Tupac"
+data <- neurocog
+neuro_domain <- "Neuropsychological Test Scores"
+theme <- theme_merge
+plot1b <-
+  bwu::drilldown(
+    data = data,
+    patient = patient,
+    neuro_domain = neuro_domain,
+    theme = theme
+  )
+plot1b
+```
+
+
+## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+
+::: {.notes}
+Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
+:::
+
+```{r drilldown-plot2b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+
+data <- neurobehav
+neuro_domain <- "Behavioral Rating Scales"
+theme <- theme_merge
+plot2b <-
+  bwu::drilldown(
+    data = data,
+    patient = patient,
+    neuro_domain = neuro_domain,
+    theme = theme
+  )
+plot2b
+```
+
+## Effort/Validity Testing {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+
+```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+
+data <- validity
+neuro_domain <- "Effort/Validity Test Scores"
+theme <- theme_merge
+plot3b <-
+  bwu::drilldown(
+    data = data,
+    patient = patient,
+    neuro_domain = neuro_domain,
+    theme = theme
+  )
+plot3b
+```
