@@ -203,7 +203,7 @@ validity <-
 knitr::include_graphics("img/plot_narrow.png", auto_pdf = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Neurocognitive Examination {background-color="var(--near-black)"}
 
 ```{r merge-themes, echo=FALSE}
 # if using single theme
@@ -233,7 +233,7 @@ plot1
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Behavioral/Emotional/Personality {background-color="var(--near-black)"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -254,7 +254,7 @@ plot2 <-
 plot2
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+## Effort/Validity Testing {background-color="var(--near-black)"}
 
 ```{r drilldown-plot3, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
@@ -291,7 +291,7 @@ validity <-
   readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)"  background-repeat="repeat"}
+## Neurocognitive Examination {background-color="var(--black)"  background-repeat="repeat"}
 
 ```{r merge-themes2, echo=FALSE}
 # if using single theme
@@ -321,7 +321,7 @@ plot1b
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--near-black)"  background-repeat="repeat"}
+## Behavioral/Emotional/Personality {background-color="var(--black)"  background-repeat="repeat"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -342,7 +342,7 @@ plot2b <-
 plot2b
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)"  background-repeat="repeat"}
+## Effort/Validity Testing {background-color="var(--black)"  background-repeat="repeat"}
 
 ```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
