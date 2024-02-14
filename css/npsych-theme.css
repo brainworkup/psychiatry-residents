@@ -83,13 +83,13 @@
   --usc-white: #ffffff;
 
   /* Colors */
-  --text-color: var(--light-purple);
+  --text-color: var(--near-white);
   --header-color: var(--near-white);
   --background-color: var(--near-black);
   --link-color: var(--hot-pink);
   --text-bold-color: var(--washed-blue);
   --code-highlight-color: var(--light-purple);
-  --inverse-text-color: var(--black-90);
+  --inverse-text-color: var(--black);
   --inverse-background-color: var(--white);
   --inverse-header-color: var(--hot-pink);
   --inverse-link-color: var(--light-green);
@@ -268,7 +268,7 @@ a > code {
 img {
   margin-bottom: 1.5rem;
   overflow: hidden;
-  *background: #fff;
+  background: #fff;
 }
 
 /* code */
@@ -347,7 +347,7 @@ a:focus {
 }
 
 .inverse a {
-  color: var(--white);
+  color: var(--light-green);
 }
 
 .inverse a:hover {
