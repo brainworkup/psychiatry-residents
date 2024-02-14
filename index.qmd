@@ -123,7 +123,7 @@ challenging ...
 
 # Standard neuropsychological test battery
 
-### Behavioral/Emotional/Personality
+## Behavioral/Emotional/Personality
 
 - Conners' Adult ADHD Diagnostic Interview for DSM-IV (CAADID), Part I: History
 - Conners' Adult ADHD Rating Scales--Self-Report: Long Version (CAARS--S:L)
@@ -149,7 +149,7 @@ challenging ...
 
 ---
 
-## Domains
+## Domains {.horizontal}
 
 ![](domains.png)
 
@@ -346,7 +346,7 @@ validity <-
   readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination
+## Neurocognitive Examination {background-color="black"}
 
 ```{r merge-themes2, echo=FALSE}
 # if using single theme
@@ -376,7 +376,7 @@ plot1b
 ```
 
 
-## Behavioral/Emotional/Personality
+## Behavioral/Emotional/Personality {background-color="black"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -397,7 +397,7 @@ plot2b <-
 plot2b
 ```
 
-## Effort/Validity Testing
+## Effort/Validity Testing {background-color="black"}
 
 ```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
