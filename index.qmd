@@ -26,14 +26,10 @@ format:
     controls-layout: bottom-right
     footer: <https://brainworkup.github.io/psychiatry-residents/>
     css: ["css/npsych-fonts.css"]
-    # css: ["css/npsych-fonts.css", "css/npsych-theme.css"]
+    width: 1600
+    height: 900
     fig-format: svg
-    # logo: logo_ksom.jpg
-# title-slide-attributes:
-#   data-background-image: 'img/logo_usc_ksom_black.jpg'
-#   data-background-size: 25% auto
-#   data-background-opacity: "0.1"
-#   data-background-position: bottom
+    fig-align: center
 ---
 
 ```{r setup, include=FALSE}
@@ -105,23 +101,34 @@ knitr::opts_chunk$set(dev.args = list(bg = "transparent"))
 
 ## Learning Objectives
 
-1. Understand the role of neuropsychological assessment in psychiatric practice
-2. Recognize the domains of cognitive functioning assessed in a
+- Understand the role of neuropsychological assessment in psychiatric practice
+- Recognize the domains of cognitive functioning assessed in a
 neuropsychological evaluation
-3. Interpret the results of a neuropsychological evaluation in the context of
+- Interpret the results of a neuropsychological evaluation in the context of
 psychiatric diagnosis and treatment planning
 
 ## Reason for Referral
 
-- Most often, the reason for referral is to clarify the presence of cognitive
-  deficits that may be contributing to a patient's psychiatric symptoms
-- And for psychodiagnostic clarification
-  - e.g., poor response to pharmacotherapy
+**_From you to me_** 
+
+- Psychodiagnostic clarification ( e.g., poor response to pharmacotherapy)
+
+
+- To clarify the presence of cognitive
+  deficits that may be contributing to a patient's psychopathology
+
+- Role of neuropsychological assessment in psychiatric differential diagnosis is
+challenging ...
 
 
 ## Domains
 
 ![](domains.png)
+
+## How do we measure these domains?
+
+![](stroop.svg)
+
 
 ## General cognitive ability "*g*"
 
@@ -198,7 +205,7 @@ Attention
 # Case Report #1
 
 - Patient: 20-something yr-old male 
-- Referral: ADHD and dyslexia evaluation r.e. federal felony charges
+- Referral: ADHD/LD evaluation r.e. federal indictment
 
 ```{r, read-data}
 library(readr)
