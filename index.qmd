@@ -103,6 +103,22 @@ theme_chalk <- function() {
 knitr::opts_chunk$set(dev.args = list(bg = "transparent"))
 ```
 
+## Learning Objectives
+
+1. Understand the role of neuropsychological assessment in psychiatric practice
+2. Recognize the domains of cognitive functioning assessed in a
+neuropsychological evaluation
+3. Interpret the results of a neuropsychological evaluation in the context of
+psychiatric diagnosis and treatment planning
+
+## Reason for Referral
+
+- Most often, the reason for referral is to clarify the presence of cognitive
+  deficits that may be contributing to a patient's psychiatric symptoms
+- And for psychodiagnostic clarification
+  - e.g., poor response to pharmacotherapy
+
+
 ## Domains
 
 ![](domains.png)
