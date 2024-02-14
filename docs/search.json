@@ -25,25 +25,32 @@
     "href": "index.html#attentionexecutive",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Attention/Executive",
-    "text": "Attention/Executive\nAttention\n\nattention span\nattentional fluency"
+    "text": "Attention/Executive\n\nAttention\nWorking Memory\nProcessing Speed\nExecutive Functioning"
   },
   {
     "objectID": "index.html#attentionexecutive-1",
     "href": "index.html#attentionexecutive-1",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Attention/Executive",
-    "text": "Attention/Executive\n\nWorking Memory\n\nverbal working memory\nnonverbal working memory\n\nAttention"
+    "text": "Attention/Executive\nAttention\n\nattention span\nattentional fluency"
   },
   {
     "objectID": "index.html#attentionexecutive-2",
     "href": "index.html#attentionexecutive-2",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Attention/Executive",
-    "text": "Attention/Executive\n\nProcessing Speed\n\npsychomotor speed\ncognitive efficiency\n\nWorking Memory\nAttention"
+    "text": "Attention/Executive\n\nWorking Memory\n\nverbal working memory\nnonverbal working memory\n\nAttention"
   },
   {
     "objectID": "index.html#attentionexecutive-3",
     "href": "index.html#attentionexecutive-3",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Attention/Executive",
+    "text": "Attention/Executive\n\nProcessing Speed\n\npsychomotor speed\ncognitive efficiency\n\nWorking Memory\nAttention"
+  },
+  {
+    "objectID": "index.html#attentionexecutive-4",
+    "href": "index.html#attentionexecutive-4",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Attention/Executive",
     "text": "Attention/Executive\n\nExecutive Functioning\n\nplanning\njudgment\n\nProcessing Speed\nWorking Memory\nAttention"
@@ -74,7 +81,7 @@
     "href": "index.html#effortvalidity-testing",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Effort/Validity Testing",
-    "text": "Effort/Validity Testing\n\n\n\n\nDrilldown through validity domains"
+    "text": "Effort/Validity Testing"
   },
   {
     "objectID": "index.html#neurocognitive-examination-1",
@@ -95,6 +102,6 @@
     "href": "index.html#effortvalidity-testing-1",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Effort/Validity Testing",
-    "text": "Effort/Validity Testing\n\n\n\n\n\n\n\n\n\nhttps://brainworkup.github.io/psychiatry-residents/"
+    "text": "Effort/Validity Testing"
   }
 ]

@@ -16,7 +16,7 @@ format:
     menu:
       side: left
       width: normal
-    embed-resources: true
+    embed-resources: false #true
     progress: true
     history: true
     chalkboard: false
@@ -124,6 +124,17 @@ Performance across individual tests correlates strongly among each other
 ![](ld.png)
 
 ## Attention/Executive {auto-animate=true}
+<!-- ## {auto-animate=true} -->
+
+Attention
+
+Working Memory
+
+Processing Speed
+
+Executive Functioning
+
+## Attention/Executive {auto-animate=true}
 
 Attention
 
@@ -169,7 +180,7 @@ Attention
 # Case Report #1
 
 - Patient: 20-something yr-old male 
-- Referral: ADHD and dyslexia evaluation for federal felony charges
+- Referral: ADHD and dyslexia evaluation r.e. federal felony charges
 
 ```{r, read-data}
 library(readr)
@@ -191,7 +202,7 @@ validity <-
 knitr::include_graphics("img/plot_narrow.png", auto_pdf = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)" background-image="url('logo_usc_ksom_black.jpg')" background-size="15%" background-repeat="repeat"}
+## Neurocognitive Examination
 
 ```{r merge-themes, echo=FALSE}
 # if using single theme
@@ -221,7 +232,7 @@ plot1
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--usc-black)" background-image="url('img/logo_usc_ksom_black.jpg')" background-size="15%" background-repeat="repeat"}
+## Behavioral/Emotional/Personality
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -242,9 +253,9 @@ plot2 <-
 plot2
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)" background-image="url('img/logo_usc_ksom_black.jpg')" background-size="15%" background-repeat="repeat"}
+## Effort/Validity Testing
 
-```{r drilldown-plot3, fig.cap = 'Drilldown through validity domains', fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+```{r drilldown-plot3, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
 data <- validity
 neuro_domain <- "Effort/Validity Test Scores"
@@ -279,7 +290,7 @@ validity <-
   readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)" background-image="url('img/logo_usc_ksom_black.jpg')" background-size="15%" background-repeat="repeat"}
+## Neurocognitive Examination
 
 ```{r merge-themes2, echo=FALSE}
 # if using single theme
@@ -309,7 +320,7 @@ plot1b
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url('img/logo_usc_ksom_black.jpg')" background-size="15%" background-repeat="repeat"}
+## Behavioral/Emotional/Personality
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -330,7 +341,7 @@ plot2b <-
 plot2b
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)" background-image="url('img/logo_usc_ksom_black.jpg')" background-size="15%" background-repeat="repeat"}
+## Effort/Validity Testing
 
 ```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
@@ -346,3 +357,5 @@ plot3b <-
   )
 plot3b
 ```
+
+# Thank you!
