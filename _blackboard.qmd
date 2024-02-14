@@ -1,0 +1,244 @@
+---
+title: "Neuropsychological Assessment for Psychiatrists"
+subtitle: "PGY2 Residency Didactic"
+author: "**Joey W. Trampush, Ph.D.**"
+institute: |
+  Department of Psychiatry and the Behavioral Sciences  \
+  Keck School of Medicine  of USC
+date: last-modified
+date-format: long
+format: 
+  blackboard-revealjs:
+    incremental: false
+    show-notes: false #separate-page
+    slide-number: true
+    show-slide-number: print
+    menu:
+      side: left
+      width: wide
+    embed-resources: false
+    progress: true
+    history: true
+    chalkboard: true
+    multiplex: true
+    transition: slide
+    background-transition: fade
+    controls-layout: bottom-right
+    footer: <https://brainworkup.github.io/psychiatry-residents/>
+    # logo: logo_ksom.jpg
+# title-slide-attributes:
+#   data-background-image: img/logo_usc_ksom_black.jpg
+#   data-background-size: 25% auto
+#   data-background-opacity: "0.1"
+#   data-background-position: bottom
+---
+
+```{r setup, include=FALSE}
+## load libraries
+library(crosstalk)
+library(dplyr)
+library(gifski)
+library(highcharter)
+library(htmlwidgets)
+library(knitr)
+library(languageserver)
+library(manipulateWidget)
+library(revealjs)
+library(svglite)
+library(tibble)
+library(vroom)
+library(readr)
+library(widgetframe)
+library(xaringan)
+library(xaringanExtra)
+library(xaringanthemer)
+library(tidyverse)
+library(bwu)
+## knitr options
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.path = "figs/",
+  fig.width = 12,
+  fig.height = 4,
+  fig.asp = .5,
+  fig.retina = 3,
+  out.width = "100%",
+  fig.showtext = TRUE,
+  comment = NULL,
+  cache = FALSE,
+  cache.path = "cache/",
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  dev = c("svg", "svglite"),
+  hiline = TRUE
+)
+library(showtext)
+library(ggplot2)
+font_add_google("Fira Code", "Fira Code")
+showtext_auto()
+
+# theme for chalkboard
+theme_chalk <- function() {
+  theme_minimal() %+replace%
+    theme(
+      axis.ticks = element_line(colour = "white", size = 0.25),
+      text = element_text(colour = "white"),
+      axis.text = element_text(colour = "white", family = "Fira Code", size = 18),
+      axis.title = element_text(colour = "white", family = "Fira Code", size = 24),
+      panel.background = element_rect(colour = NA, fill = "transparent"),
+      plot.background = element_rect(colour = "white", fill = "transparent"),
+      legend.position = "bottom",
+      legend.title = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_line(colour = "white", size = 0.25),
+      panel.grid.major.y = element_line(colour = "white", size = 0.25),
+      legend.text = element_text(size = 24)
+    )
+}
+
+knitr::opts_chunk$set(dev.args = list(bg = "transparent"))
+```
+
+
+# Attention/Executive
+
+## {auto-animate=true}
+
+Attention
+
+## {auto-animate=true}
+
+Working Memory
+
+Attention
+
+## {auto-animate=true}
+
+Processing Speed
+
+Working Memory
+
+Attention
+
+## {auto-animate=true}
+
+Executive Functioning
+
+Processing Speed
+
+Working Memory
+
+Attention
+
+## Two columns
+
+:::: {.columns}
+
+::: {.column width="40%"}
+contents...
+:::
+
+::: {.column width="60%"}
+contents...
+:::
+
+::::
+
+# Patient Examples
+
+```{r, read-data}
+library(readr)
+neuropsych <- read_csv("data/neuropsych.csv")
+neurocog <-
+  readr::read_csv("data/neurocog.csv", show_col_types = TRUE) |>
+  dplyr::filter(scale != "Orientation") |>
+  dplyr::filter(narrow != "Response Monitoring") |>
+  dplyr::filter(narrow != "Recognition Memory")
+neurobehav <-
+  readr::read_csv("data/neurobehav.csv", show_col_types = TRUE)
+validity <-
+  readr::read_csv("data/validity.csv", show_col_types = TRUE)
+```
+
+## Distribution of Scores: _Population-level Interpretation_
+
+```{r, gauss-plot1, fig.cap = 'Performance classification of neuropsychological test scores in the general population.', fig.retina = 3, fig.asp = 0.5, out.width = '50%'}
+knitr::include_graphics("img/plot_narrow.png", auto_pdf = TRUE)
+```
+
+## Neurocognitive Examination {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+
+Patient is a 23-yr-old male with a history of dyslexia ... and other things
+
+```{r merge-themes, echo=FALSE}
+# if using single theme
+theme <- highcharter::hc_theme_sandsignika()
+# if merging themes
+theme_merge <-
+  highcharter::hc_theme_merge(
+    highcharter::hc_theme_monokai(),
+    highcharter::hc_theme_darkunica()
+  )
+```
+
+```{r drilldown-plot1, fig.cap = "Drilldown from broad to narrow neurocognitive domains", fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+
+patient <- "Biggie Smalls"
+data <- neurocog
+neuro_domain <- "Neuropsychological Test Scores"
+theme <- theme_merge
+plot1 <-
+  bwu::drilldown(
+    data = data,
+    patient = patient,
+    neuro_domain = neuro_domain,
+    theme = theme
+  )
+plot1
+```
+
+
+## Behavioral/Emotional/Personality {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+
+Drilldown across neurobehavioral domains
+
+::: {.notes}
+Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
+:::
+
+```{r drilldown-plot2, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+
+data <- neurobehav
+neuro_domain <- "Behavioral Rating Scales"
+theme <- theme_merge
+plot2 <-
+  bwu::drilldown(
+    data = data,
+    patient = patient,
+    neuro_domain = neuro_domain,
+    theme = theme
+  )
+plot2
+```
+
+## Effort/Validity Testing {background-color="var(--near-black)" background-image="url(img/logo_usc_ksom_black.jpg)" background-size="15%" background-repeat="repeat"}
+
+Summary of *cognitive performance validity* and *ratings of symptom validity*
+
+```{r drilldown-plot3, fig.cap = 'Drilldown through validity domains', fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
+
+data <- validity
+neuro_domain <- "Effort/Validity Test Scores"
+theme <- theme_merge
+plot3 <-
+  bwu::drilldown(
+    data = data,
+    patient = patient,
+    neuro_domain = neuro_domain,
+    theme = theme
+  )
+plot3
+```
+
+

@@ -7,34 +7,6 @@
     "text": "Domains"
   },
   {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "",
-    "text": "Attention"
-  },
-  {
-    "objectID": "index.html#section-1",
-    "href": "index.html#section-1",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "",
-    "text": "Working Memory\nAttention"
-  },
-  {
-    "objectID": "index.html#section-2",
-    "href": "index.html#section-2",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "",
-    "text": "Processing Speed\nWorking Memory\nAttention"
-  },
-  {
-    "objectID": "index.html#section-3",
-    "href": "index.html#section-3",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "",
-    "text": "Executive Functioning\nProcessing Speed\nWorking Memory\nAttention"
-  },
-  {
     "objectID": "index.html#general-cognitive-ability-g",
     "href": "index.html#general-cognitive-ability-g",
     "title": "Neuropsychological Assessment for Psychiatrists",
@@ -42,74 +14,11 @@
     "text": "General cognitive ability “g”\n\n\nPerformance across individual tests correlates strongly among each other"
   },
   {
-    "objectID": "index.html#distribution-of-scores-population-level-interpretation",
-    "href": "index.html#distribution-of-scores-population-level-interpretation",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Distribution of Scores: Population-level Interpretation",
-    "text": "Distribution of Scores: Population-level Interpretation\n\nPerformance classification of neuropsychological test scores in the general population."
-  },
-  {
-    "objectID": "index.html#neurocognitive-examination",
-    "href": "index.html#neurocognitive-examination",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Neurocognitive Examination",
-    "text": "Neurocognitive Examination"
-  },
-  {
-    "objectID": "index.html#behavioralemotionalpersonality",
-    "href": "index.html#behavioralemotionalpersonality",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Behavioral/Emotional/Personality",
-    "text": "Behavioral/Emotional/Personality\n\nSummary of self-report and observer-report scales from the PAI, CAARS, and CEFI"
-  },
-  {
-    "objectID": "index.html#effortvalidity-testing",
-    "href": "index.html#effortvalidity-testing",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Effort/Validity Testing",
-    "text": "Effort/Validity Testing\n\n\n\n\nDrilldown through validity domains"
-  },
-  {
-    "objectID": "index.html#ld",
-    "href": "index.html#ld",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "LD",
-    "text": "LD\n\n\n\n\nhttps://brainworkup.github.io/psychiatry-residents/"
-  },
-  {
     "objectID": "index.html#learning-disorders-ld",
     "href": "index.html#learning-disorders-ld",
     "title": "Neuropsychological Assessment for Psychiatrists",
     "section": "Learning Disorders (LD)",
     "text": "Learning Disorders (LD)"
-  },
-  {
-    "objectID": "index.html#distribution-of-scores-population-level-interpretation-1",
-    "href": "index.html#distribution-of-scores-population-level-interpretation-1",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Distribution of Scores: Population-level Interpretation",
-    "text": "Distribution of Scores: Population-level Interpretation\n\nPerformance classification of neuropsychological test scores in the general population."
-  },
-  {
-    "objectID": "index.html#neurocognitive-examination-1",
-    "href": "index.html#neurocognitive-examination-1",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Neurocognitive Examination",
-    "text": "Neurocognitive Examination"
-  },
-  {
-    "objectID": "index.html#behavioralemotionalpersonality-1",
-    "href": "index.html#behavioralemotionalpersonality-1",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Behavioral/Emotional/Personality",
-    "text": "Behavioral/Emotional/Personality\n\nSummary of self-report and observer-report scales from the PAI, CAARS, and CEFI"
-  },
-  {
-    "objectID": "index.html#effortvalidity-testing-1",
-    "href": "index.html#effortvalidity-testing-1",
-    "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Effort/Validity Testing",
-    "text": "Effort/Validity Testing\n\n\n\n\n\n\n\n\n\nhttps://brainworkup.github.io/psychiatry-residents/"
   },
   {
     "objectID": "index.html#attentionexecutive",
@@ -140,45 +49,52 @@
     "text": "Attention/Executive\n\nExecutive Functioning\n\nplanning\njudgment\n\nProcessing Speed\nWorking Memory\nAttention"
   },
   {
-    "objectID": "index.html#neurocognitive-examination-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat",
-    "href": "index.html#neurocognitive-examination-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat",
+    "objectID": "index.html#distribution-of-scores-population-level-interpretation",
+    "href": "index.html#distribution-of-scores-population-level-interpretation",
     "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Neurocognitive Examination {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}",
-    "text": "Neurocognitive Examination {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}"
+    "section": "Distribution of Scores: Population-level Interpretation",
+    "text": "Distribution of Scores: Population-level Interpretation\n\nPerformance classification of neuropsychological test scores in the general population."
   },
   {
-    "objectID": "index.html#behavioralemotionalpersonality-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat",
-    "href": "index.html#behavioralemotionalpersonality-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat",
+    "objectID": "index.html#neurocognitive-examination",
+    "href": "index.html#neurocognitive-examination",
     "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Behavioral/Emotional/Personality {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}",
-    "text": "Behavioral/Emotional/Personality {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}\n\nSummary of self-report and observer-report scales from the PAI, CAARS, and CEFI"
+    "section": "Neurocognitive Examination",
+    "text": "Neurocognitive Examination"
   },
   {
-    "objectID": "index.html#effortvalidity-testing-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat",
-    "href": "index.html#effortvalidity-testing-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat",
+    "objectID": "index.html#behavioralemotionalpersonality",
+    "href": "index.html#behavioralemotionalpersonality",
     "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Effort/Validity Testing {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}",
-    "text": "Effort/Validity Testing {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}\n\n\n\n\nDrilldown through validity domains"
+    "section": "Behavioral/Emotional/Personality",
+    "text": "Behavioral/Emotional/Personality\n\nSummary of self-report and observer-report scales from the PAI, CAARS, and CEFI"
   },
   {
-    "objectID": "index.html#neurocognitive-examination-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat-1",
-    "href": "index.html#neurocognitive-examination-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat-1",
+    "objectID": "index.html#effortvalidity-testing",
+    "href": "index.html#effortvalidity-testing",
     "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Neurocognitive Examination {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}",
-    "text": "Neurocognitive Examination {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}"
+    "section": "Effort/Validity Testing",
+    "text": "Effort/Validity Testing\n\n\n\n\nDrilldown through validity domains"
   },
   {
-    "objectID": "index.html#behavioralemotionalpersonality-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat-1",
-    "href": "index.html#behavioralemotionalpersonality-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat-1",
+    "objectID": "index.html#neurocognitive-examination-1",
+    "href": "index.html#neurocognitive-examination-1",
     "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Behavioral/Emotional/Personality {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}",
-    "text": "Behavioral/Emotional/Personality {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}\n\nSummary of self-report and observer-report scales from the PAI, CAARS, and CEFI"
+    "section": "Neurocognitive Examination",
+    "text": "Neurocognitive Examination"
   },
   {
-    "objectID": "index.html#effortvalidity-testing-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat-1",
-    "href": "index.html#effortvalidity-testing-background-colorvarnear-black-background-imageurlimglogo_usc_ksom_black.jpg-background-size15-background-repeatrepeat-1",
+    "objectID": "index.html#behavioralemotionalpersonality-1",
+    "href": "index.html#behavioralemotionalpersonality-1",
     "title": "Neuropsychological Assessment for Psychiatrists",
-    "section": "Effort/Validity Testing {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}",
-    "text": "Effort/Validity Testing {background-color=“var(–near-black)” background-image=“url(”img/logo_usc_ksom_black.jpg”)” background-size=“15%” background-repeat=“repeat”}\n\n\n\n\n\n\n\n\n\nhttps://brainworkup.github.io/psychiatry-residents/"
+    "section": "Behavioral/Emotional/Personality",
+    "text": "Behavioral/Emotional/Personality\n\nSummary of self-report and observer-report scales from the PAI, CAARS, and CEFI"
+  },
+  {
+    "objectID": "index.html#effortvalidity-testing-1",
+    "href": "index.html#effortvalidity-testing-1",
+    "title": "Neuropsychological Assessment for Psychiatrists",
+    "section": "Effort/Validity Testing",
+    "text": "Effort/Validity Testing\n\n\n\n\n\n\n\n\n\nhttps://brainworkup.github.io/psychiatry-residents/"
   }
 ]
