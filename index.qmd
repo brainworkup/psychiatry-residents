@@ -202,7 +202,7 @@ validity <-
 knitr::include_graphics("img/plot_narrow.png", auto_pdf = TRUE)
 ```
 
-## Neurocognitive Examination
+## Neurocognitive Examination {background-color="var(--near-black)"}
 
 ```{r merge-themes, echo=FALSE}
 # if using single theme
@@ -232,7 +232,7 @@ plot1
 ```
 
 
-## Behavioral/Emotional/Personality
+## Behavioral/Emotional/Personality {background-color="var(--near-black)"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -253,7 +253,7 @@ plot2 <-
 plot2
 ```
 
-## Effort/Validity Testing
+## Effort/Validity Testing {background-color="var(--near-black)"}
 
 ```{r drilldown-plot3, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
@@ -290,7 +290,7 @@ validity <-
   readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination
+## Neurocognitive Examination {background-color="var(--near-black)"}
 
 ```{r merge-themes2, echo=FALSE}
 # if using single theme
@@ -320,7 +320,7 @@ plot1b
 ```
 
 
-## Behavioral/Emotional/Personality
+## Behavioral/Emotional/Personality {background-color="var(--near-black)"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -341,7 +341,7 @@ plot2b <-
 plot2b
 ```
 
-## Effort/Validity Testing
+## Effort/Validity Testing {background-color="var(--near-black)"}
 
 ```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
