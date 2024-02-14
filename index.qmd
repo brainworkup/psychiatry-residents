@@ -16,7 +16,7 @@ format:
     menu:
       side: left
       width: normal
-    embed-resources: false #true
+    embed-resources: true #false
     progress: true
     history: true
     chalkboard: false
@@ -359,3 +359,6 @@ plot3b
 ```
 
 # Thank you!
+
+- URL to slide deck and resources:
+<https://brainworkup.github.io/psychiatry-residents/>
