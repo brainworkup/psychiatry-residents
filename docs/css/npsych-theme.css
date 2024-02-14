@@ -83,9 +83,12 @@
   --usc-white: #ffffff;
 
   /* Colors */
-  --text-color: var(--near-white);
+  --text-color: var(--near-black);
+  --header-color: var(--near-black);
+  --background-color: var(--near-white);
+  /* --text-color: var(--near-white);
   --header-color: var(--near-white);
-  --background-color: var(--near-black);
+  --background-color: var(--near-black); */
   --link-color: var(--hot-pink);
   --text-bold-color: var(--washed-blue);
   --code-highlight-color: var(--light-purple);

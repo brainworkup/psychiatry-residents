@@ -291,8 +291,7 @@ validity <-
   readr::read_csv("data/adhd/validity.csv", show_col_types = TRUE)
 ```
 
-## Neurocognitive Examination {background-color="var(--near-black)"
-inverse-background-color="var(--light-purple)" background-repeat="repeat"}
+## Neurocognitive Examination {background-color="var(--near-black)" text-color="var(--light-purple)"}
 
 ```{r merge-themes2, echo=FALSE}
 # if using single theme
@@ -322,7 +321,7 @@ plot1b
 ```
 
 
-## Behavioral/Emotional/Personality {background-color="var(--black)"  background-repeat="repeat"}
+## Behavioral/Emotional/Personality {background-color="var(--near-black)" text-color="var(--light-purple)" background-repeat="repeat"}
 
 ::: {.notes}
 Summary of self-report and observer-report scales from the PAI, CAARS, and CEFI
@@ -343,8 +342,7 @@ plot2b <-
 plot2b
 ```
 
-## Effort/Validity Testing {background-color="var(--near-black)"
-inverse-background-color="var(--light-purple)" background-repeat="repeat"}
+## Effort/Validity Testing {background-color="var(--near-black)" text-color="var(--light-purple)" background-repeat="repeat"}
 
 ```{r drilldown-plot3b, fig.width = 12, fig.height = 8, fig.retina = 3, out.width = '100%'}
 
