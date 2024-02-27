@@ -242,7 +242,7 @@ knitr::include_graphics("img/plot_narrow.png", auto_pdf = TRUE)
 # Case Report #1
 
 - Patient: 20-something yr-old male 
-- Referral: ADHD/LD evaluation r.e. federal indictment
+- Referral: ADHD/LD evaluation
 
 ```{r, read-data}
 library(readr)
@@ -330,7 +330,7 @@ plot3
 
 - Patient: 20-something yr-old female
  
-- Referral: ADHD and anxiety for MCAT accommodations
+- Referral: ADHD and anxiety for accommodations
 
 ```{r, read-data2}
 library(readr)
